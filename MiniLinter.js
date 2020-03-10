@@ -12,4 +12,23 @@ let betterWords=storyWords.filter(function(word){
 })
 console.log(betterWords);
 
-//UPDATING SOON--->
+
+let basicallyCount=0;
+let reallyCount=0;
+let veryCount=0;
+
+for(word of storyWords){
+  if(word==='really'){
+    reallyCount+=1;
+  }
+  else if(word==='basically'){
+    basicallyCount+=1;
+  }
+  else if(word==='very'){
+    veryCount+=1;
+  }
+}
+
+console.log(reallyCount);
+
+console.log(betterWords.join(' '));
